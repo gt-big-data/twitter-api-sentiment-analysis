@@ -1,1 +1,3 @@
 twython
+requests
+requests_oathlib

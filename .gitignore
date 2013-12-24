@@ -1,1 +1,4 @@
 env
+api_keys.py
+*.pyc
+*.swp
