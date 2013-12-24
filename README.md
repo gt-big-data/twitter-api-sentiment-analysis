@@ -26,24 +26,33 @@ tweets in json format. Run it with
 ```python sentiment.py data/atl.json```
 to view "interesting" tweets and the average sentiment of a sample of tweets about the Falcons - 49ers game.
 
+
+### Downloading More Data
 You can also download more data with ```hashtag_downloader.py```, which streams data from the search criteria to
 standard out.
 Run like
 ```python hashtag_downloader.py <topic>```
 where topic can be anything you're interested in or that people might write interesting things about.
 
-*HOWEVER* The downloader requires you to have Twitter API keys to stream the data. Register your Twitter account with 
-http://dev.twitter.com , create a new app, and then use the API keys from the app to download from Twitter.
-The python file `hashtag_downloader.py` is expecting is something like
+*HOWEVER* The downloader requires you to have Twitter API keys to stream the data, and we can't make these public on the internet... so get your own! 
+1.  Register your Twitter account with http://dev.twitter.com
+2.  Log in to dev.twitter.com and go to "My applications" (hover over your avatar)
+3.  Create a new app (gt-big-data, for instance)
+4.  Create access tokens in the new app.
+Then use the information from this app (gt-big-data) to fill out an `api_keys.py`
+
+The python file `hashtag_downloader.py` is expecting is a `api_keys.py` file with these four lines:
+
 ```
-KEY='<client key>'
-SECRET='<client secret>'
-TOKEN= '<oath token>'
-TOKEN_SECRET= '<oath secret>'
+KEY='<consumer key>'
+SECRET='<consumer secret>'
+TOKEN= '<access (oath) token>'
+TOKEN_SECRET= '<access (oath) token secret>'
 ```
-from your Twitter app page.
+from your Twitter app page. To generate access tokens, you'll need to create them within the Twitter app (there's a big button for it.)
 
 
 ## Further topics
 *  Machine learning is used heavily with sentiment analysis. Look into NLTK to see far more sophistocated algorithms
 for sentiment analysis beyond the rudimentary one used here.
+*  Use the Twitter API to see how sentiment about a topic varies by location.
