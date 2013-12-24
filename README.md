@@ -35,10 +35,12 @@ Run like
 where topic can be anything you're interested in or that people might write interesting things about.
 
 *HOWEVER* The downloader requires you to have Twitter API keys to stream the data, and we can't make these public on the internet... so get your own! 
-1.  Register your Twitter account with http://dev.twitter.com
-2.  Log in to dev.twitter.com and go to "My applications" (hover over your avatar)
-3.  Create a new app (gt-big-data, for instance)
-4.  Create access tokens in the new app.
+
+1. Register your Twitter account with http://dev.twitter.com
+2. Log in to dev.twitter.com and go to "My applications" (hover over your avatar)
+3. Create a new app (gt-big-data, for instance)
+4. Create access tokens in the new app.
+
 Then use the information from this app (gt-big-data) to fill out an `api_keys.py`
 
 The python file `hashtag_downloader.py` is expecting is a `api_keys.py` file with these four lines:
