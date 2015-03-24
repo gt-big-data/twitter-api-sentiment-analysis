@@ -21,9 +21,9 @@ Using pip,
 You may need ```sudo``` permissions, unless you are using virtualenv.
 
 ## Usage
-The project comes with sample data sets you can analyze. The file ```sentiment.py``` is used to analyze downloaded
+The project comes with sample data sets you can analyze. The file ```sentiments.py``` is used to analyze downloaded
 tweets in json format. Run it with
-```python sentiment.py data/atl.json```
+```python sentiments.py data/atl.json```
 to view "interesting" tweets and the average sentiment of a sample of tweets about the Falcons - 49ers game.
 
 
